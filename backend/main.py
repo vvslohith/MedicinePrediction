@@ -11,7 +11,7 @@ diseases_list = {15: 'Fungal infection', 4: 'Allergy', 16: 'GERD', 9: 'Chronic c
 app = FastAPI()
 
 # Load the model
-model = joblib.load("aimodel/svc.pkl")
+model = joblib.load("svc.pkl")
 
 # Define the input schema
 class PredictionRequest(BaseModel):
